@@ -29,7 +29,8 @@
 
   </br> 
 
-  ![Snake animation](https://github.com/jaqueline-silva4/jaqueline-silva4/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/jaqueline-silva4/jaqueline-silva4/blob/output/github-contribution-grid-snake.svg)
+
   
   
 
