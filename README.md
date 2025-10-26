@@ -5,10 +5,10 @@
 
 ![c633c20ede82f0e0ced7d570dbe3a1f3](https://user-images.githubusercontent.com/70382532/138322189-2db8df52-9dcb-40a0-88a8-c365466bd33d.gif)
 
- <div align="center">
+<div align="center">
   <a href="https://github.com/jaqueline-silva4">
-  https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&theme=material-palenight&show_icons=true)
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&layout=compact)
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&show_icons=true&theme=material-palenight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&layout=compact&langs_count=7&theme=material-palenight"/>
 </div>
 
 
