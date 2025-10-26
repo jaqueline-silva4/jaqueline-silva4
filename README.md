@@ -7,7 +7,7 @@
 
  <div align="center">
   <a href="https://github.com/jaqueline-silva4">
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&show_icons=true&theme=material-palenight)
+  https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&theme=material-palenight&show_icons=true)
   ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&layout=compact)
 </div>
 
