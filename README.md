@@ -7,8 +7,8 @@
 
  <div align="center">
   <a href="https://github.com/jaqueline-silva4">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&layout=compact&langs_count=7&theme=dark"/>
+  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&show_icons=true&theme=material-palenight)
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&layout=compact)
 </div>
 
 
