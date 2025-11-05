@@ -1,9 +1,9 @@
-name: Atualização automática do README e animação Snake 🐍
+name: Atualização automática do README 🕒
 
 on:
   schedule:
-    - cron: "0 0 * * *"   
-  workflow_dispatch:       
+    - cron: "0 0 * * *" 
+  workflow_dispatch:     
 
 jobs:
   update-readme:
@@ -14,39 +14,15 @@ jobs:
       - name: Clonar repositório
         uses: actions/checkout@v3
 
-      - name: Atualizar log no README (exemplo simples)
+      
+      - name: Atualizar log (sem alterar README)
         run: |
           echo "🕒 Última atualização automática: $(date -u)" > update_log.txt
-          echo "" >> README.md
-          echo "_Atualizado automaticamente em $(date -u)_" >> README.md
 
       - name: Commit e push das mudanças
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Atualização automática do README [$(date -u)]" || echo "Nenhuma alteração detectada"
-          git push
-
-  snake:
-    name: Gerar animação Snake 🐍
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Clonar repositório
-        uses: actions/checkout@v3
-
-      - name: Gerar a animação Snake
-        uses: Platane/snk@master
-        with:
-          github_user_name: jaqueline-silva4   
-          outputs: dist/snake.svg             
-
-      - name: Commit e push da animação Snake
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdir -p dist
-          git add dist/snake.svg
-          git commit -m "Atualiza animação da cobrinha 🐍 [$(date -u)]" || echo "Nada a atualizar"
+          git add update_log.txt || true
+          git commit -m "Atualização automática do log [$(date -u)]" || echo "Nenhuma alteração detectada"
           git push
