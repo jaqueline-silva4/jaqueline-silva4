@@ -1,28 +1,23 @@
-name: Atualização automática do README 🕒
+name: Atualização automática diária 🔄
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
-  workflow_dispatch:     
+    # Executa todos os dias à meia-noite (UTC)
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
-  update-readme:
-    name: Atualizar README automaticamente
+  keep-active:
+    name: Manter repositório ativo
     runs-on: ubuntu-latest
 
     steps:
       - name: Clonar repositório
         uses: actions/checkout@v3
 
-      
-      - name: Atualizar log (sem alterar README)
-        run: |
-          echo "🕒 Última atualização automática: $(date -u)" > update_log.txt
-
-      - name: Commit e push das mudanças
+      - name: Criar commit vazio
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add update_log.txt || true
-          git commit -m "Atualização automática do log [$(date -u)]" || echo "Nenhuma alteração detectada"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "Atualização automática diária"
           git push
