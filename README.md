@@ -29,4 +29,7 @@
 
   </br> 
 
+  ![Metrics](https://raw.githubusercontent.com/jaqueline-silva4/jaqueline-silva4/output/metrics.svg)
+
+
 
