@@ -1,7 +1,16 @@
  <h2>Olá! Eu sou a Jaqueline Silva. </h2>
 
-![jaqueline-silva4's Stats](https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&theme=material-palenight&show_icons=true&hide_border=false&count_private=true)
-![jaqueline-silva4's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&theme=material-palenight&show_icons=true&hide_border=false&layout=compact)
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=jaqueline-silva4&theme=material-palenight&show_icons=true&hide_border=false&count_private=true" width="420px" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jaqueline-silva4&theme=material-palenight&show_icons=true&hide_border=false&layout=compact" width="350px" />
+    </td>
+  </tr>
+</table>
+)
 
 <div  align="center"> 
   <div style="display: inline_block"><br>
