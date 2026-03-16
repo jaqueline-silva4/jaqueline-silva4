@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update files
-        uses: MathieuSoysal/file-updater-for-release@v1.0.1
+        uses: jaqueline-silva4/file-updater-for-release@v1.0.1
         with:
           files: README.md # List of files to update
           prefix: "io.github.me:javalib:" # Prefix before the version in your cas is io.github.me:javalib:
