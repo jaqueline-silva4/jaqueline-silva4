@@ -1,21 +1,29 @@
-name: Update README
+# Source - https://stackoverflow.com/a/75426366
+# Posted by ThrowsError, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-03-16, License - CC BY-SA 4.0
+
+name: Update files
 
 on:
-  schedule:
-    # Runs every first and 12 hrs.
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
-  activity:
-    name: Update README with recent activity
+  publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Update files
+        uses: MathieuSoysal/file-updater-for-release@v1.0.1
+        with:
+          files: README.md # List of files to update
+          prefix: "io.github.me:javalib:" # Prefix before the version in your cas is io.github.me:javalib:
 
-      - name: Add activity to readme
-        uses: Readme-Workflows/recent-activity@v2.4.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # You need to create your own token with pull request rights
+          commit-message: update readme
+          title: Update readme
+          body: Update readme to reflect release changes
+          branch: update-readme
+          base: main
